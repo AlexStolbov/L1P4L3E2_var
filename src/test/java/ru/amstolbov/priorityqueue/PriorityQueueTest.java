@@ -15,7 +15,7 @@ public class PriorityQueueTest {
         priorityQueue.put(new Task("Three", 3));
         priorityQueue.put(new Task(nameOne, 1));
         priorityQueue.put(new Task("Four", 4));
-        Task result = priorityQueue.take();
+        var result = priorityQueue.take();
         assertThat(result.getDesc(), is(nameOne));
     }
 
